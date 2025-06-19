@@ -8,9 +8,9 @@
 ************************************
 Step 1: Basic Setup
 ************************************
-================================================================
+===================================================================
 1.1. Launch 1 VM (Ubuntu, 24.04, t2.large, 28 GB, Name: BMS-Server)
-================================================================
+===================================================================
 Open below ports for the Security Group attached to the above VM
 Type                  Protocol   Port range                              
 SMTP                  TCP           25 
@@ -145,9 +145,9 @@ It will take 5-10 minutes
 ************************************
 Step 2: Tools Installation
 ************************************
-=============================
+====================================
 2.1.1 Connect to the Jenkins Server
-=============================
+====================================
 vi Jenkins.sh ----> Paste the below content ---->
 #!/bin/bash
 
@@ -213,9 +213,9 @@ Try to pull some default image ----> docker pull hello-world ----> If you are un
 
 Make sure to Login to DockerHub account in browser
 Goto MobaXTerm Terminal ---> Login to DockerHub ---> docker login -u <DockerHubUserName> ---> Click Enter ---> Enter the password of DockerHub 
-=============================
+======================================
 2.1.3. Install Trivy on Jenkins Server
-=============================
+======================================
 vi trivy.sh ----> Paste the below commands ---->
 #!/bin/bash
 sudo apt-get install wget apt-transport-https gnupg
@@ -395,7 +395,7 @@ pipeline {
 Access the BMS App using Public IP of BMS-Server
 
 ****************************************************************************************************************************
-											PART II: K8S Deployment & Monitoring
+				PART II: K8S Deployment & Monitoring
 ****************************************************************************************************************************
 Before executing the K8S Stage pipeline;
 
